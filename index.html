@@ -6,22 +6,22 @@
   </head>
   <body>
 	
-	<header>
+	<header class="main-header">
 		<h1 class="visually-hidden">DEVICE - интернет магазин электорники</h1>
-		<a>
+		<a class="main-logo">
 			<img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
 		</a>
-
-		<ul>
-			<li>Поиск по сайту</li> <!--Здесь будет форма для поиска-->
-			<li><button type="button">Войти</button></li>
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Корзина</a></li>
+        <div class="search">Поиск по сайту</div> <!--Здесь будет форма для поиска-->
+		
+        <ul class="user-menu">
+			<li class="user-menu-login"><a href="#">Войти</a></li>
+			<li class="user-menu-compare"><a href="#">Сравнить</a></li>
+			<li class="user-menu-cart"><a href="#">Корзина</a></li>
 		</ul>
 
-		<nav>					
-			<ul>
-				<li><a href="catalog.html">Каталог товаров</a></li>
+		<nav class="main-navigation">					
+			<ul class="site-navigation">
+				<li class="site-navigation-catalog"><a href="catalog.html">Каталог товаров</a></li>
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
@@ -30,57 +30,59 @@
 
 	</header>
 
-	<main>
+	<main class="container">
 		
 		<!--Здесь будет блок выделенный красным цветом в задании (сейчас не нужно размечать)-->
 
-		<section>
+		<section class="info-block">
 			<h2>О нас</h2>
 			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-			<ul>
+			<ul class="delivery">
 				<li>Деловые Линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
-			<a href="#">Подробнее о нас</a>
+			<a href="#" class="button">Подробнее о нас</a>
 		</section>
 
-		<section>
+		<section class="info-block">
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-			<button type="button">Напишите нам</button>
+			<a href="#" class="button">Напишите нам</a>
 		</section>
 
 	</main>
 	
-	<footer>
-		<a>
+	<footer class="main-footer">
+		<a class="main-logo">
 			<img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
 		</a>
 
-		<p>г. Москва, ул. Строителей, 15</p>
-		<p>Тел.: +7 (495) 495-95-95</p>
+		<p class="footer-address">г. Москва, ул. Строителей, 15</p>
+		<p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
 
-		<ul>
-			<li><button type="button">Войти</button></li>
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Корзина</a></li>
-		</ul>
+		<ul class="user-menu">
+            <li class="user-menu-login"><a href="#">Войти</a></li>
+            <li class="user-menu-compare"><a href="#">Сравнить</a></li>
+            <li class="user-menu-cart"><a href="#">Корзина</a></li>
+        </ul>
 
-		<ul>
+		<ul class="site-navigation">
 			<li><a href="#">Доставка</a></li>
 			<li><a href="#">Гарантия</a></li>
 			<li><a href="#">Контакты</a></li>
 		</ul>
 
-		<ul>
-			<li><a href="http://facebook.com">Facebook</a></li>
-			<li><a href="http://instagram.com">Instagram</a></li>
-			<li><a href="http://twitter.com">Twitter</a></li>
+		<ul class="social-links">
+			<li class="facebook"><a href="http://facebook.com">Facebook</a></li>
+			<li class="instagram"><a href="http://instagram.com">Instagram</a></li>
+			<li class="twitter"><a href="http://twitter.com">Twitter</a></li>
 		</ul>
 
-		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="Htmlacademy"></a>
+		<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo">
+            <img src="img/htmlacademy-logo.svg" alt="Htmlacademy">
+        </a>
 		
 	</footer>
 
