@@ -40,8 +40,37 @@
 			<li class="breadcrumbs-current">Моноподы для селфи</li>
 		</ul>
 
+		<section class="catalog-filter">
+			<h2>Фильтр:</h2>
+			<div class="catalog-filter-price">
+				<h3>Стоимость</h3>
+				<div class="catalog-filter-price-range">
+					<p class="price-range-min">
+						<span>от 0</span>
+					</p>
+					<p class="price-range-max">
+						<span>до 5000</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		
+
 		<section class="catalog">
 			<h2 class="visually-hidden">Каталог товаров</h2>
+
+			<div class="catalog-sorting">
+				<h3>Сортировка:</h3>
+				<ul class="catalog-sorting-types">
+					<li id="catalog-sorting-types-price">По цене</li>
+					<li id="catalog-sorting-types-type">По цене</li>
+					<li id="catalog-sorting-types-popular">По популярности</li>
+				</ul>
+				<button type="button" class="catalog-sorting-up">Сортировка по возрастанию</button>
+				<button type="button" class="catalog-sorting-down">Сортировка по убыванию</button>
+			</div>
+
 			<ul class="catalog-list">
 				<li class="catalog-list-item">
 					<a href="#" class="catalog-list-item-image">
@@ -103,8 +132,27 @@
 					-->
 				</li>
 			</ul>
+			
+			<nav class="pagination">
+				<ul class="pagination-list">
+					<li class="pagination-list-item-current">
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+				</ul>
+
+				<a href="#" class="pagination-button">Назад</a>
+				<a href="#" class="pagination-button">Вперед</a>
+			</nav>
 
 		</section>
+
+			
 
 	</main>
 	
@@ -132,14 +180,14 @@
 		</ul>
 
 		<ul class="social-links">
-			<li class="facebook"><a href="http://facebook.com">Facebook</a></li>
-			<li class="instagram"><a href="http://instagram.com">Instagram</a></li>
-			<li class="twitter"><a href="http://twitter.com">Twitter</a></li>
+			<li class="facebook"><a href="http://facebook.com" aria-label="Магазин Девайс на Facebook">Facebook</a></li>
+			<li class="instagram"><a href="http://instagram.com" aria-label="Магазин Девайс в Instagram">Instagram</a></li>
+			<li class="twitter"><a href="http://twitter.com" aria-label="Магазин Девайс в Twitter">Twitter</a></li>
 		</ul>
 
 		<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo">
-			<img src="img/htmlacademy-logo.svg" alt="Htmlacademy">
-		</a>
+            <img src="img/htmlacademy-logo.svg" alt="Ссылка на Интенсив Htmlacademy">
+        </a>
 		
 	</footer>
 

@@ -32,7 +32,167 @@
 
 	<main class="container">
 		
-		<!--Здесь будет блок выделенный красным цветом в задании (сейчас не нужно размечать)-->
+		<section class="promo-slider">
+			<h2 class="visually-hidden">Рекламные слайды</h2>
+			<ul class="promo-slider-list">
+				<li class="promo-slider-list-item" aria-label="Включить первый рекламный слайд">1</li>
+				<li class="promo-slider-list-item" aria-label="Включить второй рекламный слайд">2</li>
+				<li class="promo-slider-list-item" aria-label="Включить третий рекламный слайд">3</li>
+			</ul>
+
+			<div class="promo-slider" id="slide-01">
+				<h3 class="visually-hidden">Первый слайд</h3>
+				<img src="https://via.placeholder.com/150x100" alt="Самая длинная палка" class="promo-slider-image">
+				<p class="promo-slider-slogan">Делай селфи, как Бен Стиллер!</p>
+				<p class="promo-slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+				<table class="promo-slider-features">
+					<tr>
+						<td>8,5 м</td>
+						<td>5 кг</td>
+						<td>Карбон</td>
+					</tr>
+					<tr>
+						<td>Длина палки</td>
+						<td>Вес палки</td>
+						<td>Материал</td>
+					</tr>
+				</table>
+				<a href="#" class="button">Подробнее</a>
+			</div>
+
+			<div class="promo-slider visually-hidden" id="slide-02">
+				<h3 class="visually-hidden">Второй слайд</h3>
+				<img src="https://via.placeholder.com/150x100" alt="Мотивирующие фитнес-браслеты" class="promo-slider-image">
+				<p class="promo-slider-slogan">Худеем правильно!</p>
+				<p class="promo-slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+				<table class="promo-slider-features">
+					<tr>
+						<td>48 часов</td>
+					</tr>
+					<tr>
+						<td>Без подзарядки</td>
+					</tr>
+				</table>
+				<a href="#" class="button">Подробнее</a>
+			</div>
+
+			<div class="promo-slider visually-hidden" id="slide-03">
+				<h3 class="visually-hidden">Третий слайд</h3>
+				<img src="https://via.placeholder.com/150x100" alt="Порхает как бабочка, жалит как пчела!" class="promo-slider-image">
+				<p class="promo-slider-slogan">Порхает как бабочка, жалит как пчела!</p>
+				<p class="promo-slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+				<table class="promo-slider-features">
+					<tr>
+						<td>800 м</td>
+						<td>50 м</td>
+					</tr>
+					<tr>
+						<td>Дальность полета</td>
+						<td>Радиус поражения</td>
+					</tr>
+				</table>
+				<a href="#" class="button">Подробнее</a>
+			</div>
+		</section>
+
+		<nav class="catalog-navigation">
+			<h2 class="visually-hidden">Каталог товаров</h2>
+			<ul class="catalog-navigation-list">
+				<li>
+					<a href="#">
+						<h3>Виртуальная реальность</h3>
+						<img src="https://via.placeholder.com/150x100" width="160" height="160" alt="Раздел Виртуальная реальность">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3>Моноподы для селфи</h3>
+						<img src="https://via.placeholder.com/150x100" width="160" height="160" alt="Раздел Моноподы для селфи">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3>Экшн-камеры</h3>
+						<img src="https://via.placeholder.com/150x100" width="160" height="160" alt="Раздел Экшн-камеры">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3>Фитнес-браслеты</h3>
+						<img src="https://via.placeholder.com/150x100" width="160" height="160" alt="Раздел Экшн-камеры">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3>Умные часы</h3>
+						<img src="https://via.placeholder.com/150x100" width="160" height="160" alt="Раздел Умные часы">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3>Квадрокоптеры</h3>
+						<img src="https://via.placeholder.com/150x100" width="160" height="160" alt="Раздел Квадрокоптеры">
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="services">
+				<h2 class="visually-hidden">Раздел Сервисы</h2>
+				<ul class="services-list">
+					<li class="button services-list-current">Доставка</li>
+					<li class="button">Гарантия</li>
+					<li class="button">Кредит</li>
+				</ul>
+
+				<div class="services-description" id="delivery">
+					<h3>Доставка</h3>
+					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					<img src="https://via.placeholder.com/150x100" width="136" height="164" alt="Раздел Сервисы - Доставка">
+				</div>
+
+				<div class="services-description" id="warranty">
+					<h3>Гарантия</h3>
+					<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+					<img src="https://via.placeholder.com/150x100" width="136" height="164" alt="Раздел Сервисы - Гарантия">
+				</div>
+				
+				<div class="services-description" id="warranty">
+					<h3>Кредит</h3>
+					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+					<img src="https://via.placeholder.com/150x100" width="136" height="164" alt="Раздел Сервисы - Кредит">
+				</div>
+		</section>
+
+		<section class="companies">
+			<h2 class="visually-hidden">Постащики товаров</h2>
+			<ul class="companies-list">
+				<li>
+					<a href="#">
+						<h3 class="visually-hidden">Компания DJI</h3>
+						<img src="https://via.placeholder.com/150x100" width="260" height="100" alt="Компания DJI">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="visually-hidden">Компания SP Gadgets</h3>
+						<img src="https://via.placeholder.com/150x100" width="260" height="100" alt="Компания SP Gadgets">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="visually-hidden">Компания GoPro</h3>
+						<img src="https://via.placeholder.com/150x100" width="260" height="100" alt="Компания GoPro">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="visually-hidden">Компания VIVE</h3>
+						<img src="https://via.placeholder.com/150x100" width="260" height="100" alt="Компания VIVE">
+					</a>
+				</li>
+			</ul>
+		</section>
 
 		<section class="info-block">
 			<h2>О нас</h2>
@@ -49,6 +209,9 @@
 		<section class="info-block">
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+			<a href="#" class="map">
+				<img src="https://via.placeholder.com/150x100" width="560" height="222" alt="Схема проезда">
+			</a>
 			<a href="#" class="button">Напишите нам</a>
 		</section>
 
@@ -75,13 +238,13 @@
 		</ul>
 
 		<ul class="social-links">
-			<li class="facebook"><a href="http://facebook.com">Facebook</a></li>
-			<li class="instagram"><a href="http://instagram.com">Instagram</a></li>
-			<li class="twitter"><a href="http://twitter.com">Twitter</a></li>
+			<li class="facebook"><a href="http://facebook.com" aria-label="Магазин Девайс на Facebook">Facebook</a></li>
+			<li class="instagram"><a href="http://instagram.com" aria-label="Магазин Девайс в Instagram">Instagram</a></li>
+			<li class="twitter"><a href="http://twitter.com" aria-label="Магазин Девайс в Twitter">Twitter</a></li>
 		</ul>
 
 		<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo">
-            <img src="img/htmlacademy-logo.svg" alt="Htmlacademy">
+            <img src="img/htmlacademy-logo.svg" alt="Ссылка на Интенсив Htmlacademy">
         </a>
 		
 	</footer>
