@@ -23,7 +23,7 @@
 
 		<nav class="main-navigation">
 			<ul class="site-navigation">
-				<li>
+				<li class="site-navigation-catalog">
 					<a href="catalog.html">Каталог товаров</a>
 					<ul class="catalog-list">
 						<li><a href="#">Виртуальная реальность</a></li>
@@ -52,17 +52,35 @@
 
 		<section class="catalog-filter">
 			<h2>Фильтр:</h2>
-			<div class="catalog-filter-price">
-				<h3>Стоимость</h3>
-				<div class="catalog-filter-price-range">
-					<p class="price-range-min">
-						<span>от 0</span>
-					</p>
-					<p class="price-range-max">
-						<span>до 5000</span>
-					</p>
-				</div>
-			</div>
+			<form id="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
+				<fieldset form="catalog-filter-form">
+					<legend>Стоимость</legend>
+					<div class="catalog-filter-price-range">
+						<p class="price-range-min">
+							<span>от 0</span>
+						</p>
+						<p class="price-range-max">
+							<span>до 5000</span>
+						</p>
+					</div>
+				</fieldset>
+
+				<fieldset form="catalog-filter-form">
+					<legend>Цвет</legend>
+					<label><input type="checkbox" name="color-black" value="black" checked>Черный</label>
+					<label><input type="checkbox" name="color-white" value="white">Белый</label>
+					<label><input type="checkbox" name="color-blue" value="blue" checked>Синий</label>
+					<label><input type="checkbox" name="color-red" value="red" checked>Красный</label>
+					<label><input type="checkbox" name="color-pink" value="pink">Розовый</label>
+				</fieldset>
+
+				<fieldset form="catalog-filter-form">
+					<legend>Bluetooth</legend>
+					<label><input type="radio" name="bluetooth" value="Yes" checked>Есть</label>
+					<label><input type="radio" name="bluetooth" value="No">Нет</label>
+				</fieldset>
+				<button type="button" class="button">Показать</button>
+			</form>
 		</section>
 
 		
@@ -90,7 +108,7 @@
 						<a href="#">Любительская селфи палка</a>
 						<span class="price">500 руб.</span>
 					</p>
-					<!--Всплавающие кнопки Добавить в корзину и сравнить
+					<!--Всплавающие ссылки Добавить в корзину и сравнить
 					<div class="item-popup">
 					<a href="#" class="addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
@@ -104,7 +122,7 @@
 					<p class="catalog-list-item-title">
 						<a href="#">Профессиональная селфи-палка</a>
 						<span>1 500 руб.</span></p>
-					<!--Всплавающие кнопки Добавить в корзину и сравнить
+					<!--Всплавающие ссылки Добавить в корзину и сравнить
 					<div class="item-popup">
 					<a href="#" class="addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
@@ -119,7 +137,7 @@
 						<a href="#">Непотопляемая селфи-палка</a>
 						<span>2 500 руб.</span>
 					</p>
-					<!--Всплавающие кнопки Добавить в корзину и сравнить
+					<!--Всплавающие ссылки Добавить в корзину и сравнить
 					<div class="item-popup">
 					<a href="#" class="addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
@@ -134,7 +152,7 @@
 						<a href="#"><span>Селфи-палка «Следуй за мной»</span></a>
 						<span>4 900 руб.</span>
 					</p>
-					<!--Всплавающие кнопки Добавить в корзину и сравнить
+					<!--Всплавающие ссылки Добавить в корзину и сравнить
 					<div class="item-popup">
 					<a href="#" class="addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
