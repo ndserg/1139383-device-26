@@ -3,19 +3,24 @@
   <head>
 	<meta charset="utf-8">
 	<title>DEVICE - интернет магазин электорники</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	
 	<header class="main-header">
-		<a class="main-logo">
-			<img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-		</a>
-		<div class="search">Поиск по сайту</div> <!--Здесь будет форма для поиска-->
+		<h1 class="visually-hidden">DEVICE - интернет магазин электорники</h1>
+		<a class="main-logo" aria-label="Логотип магазина Девайс"></a>
+		<form action="" method="post" class="search-form">
+			<input type="text" name="search" class="search-input" placeholder="Поиск по сайту">
+			<button type="button" class="search-button">Найти</button>
+		</form>
 
 		<ul class="user-menu">
 			<li class="user-menu-logout">
 				<a href="#" class="user-menu-profile">Валентин Петухов</a>
-				<a href="#">Выйти</a>
+				<a href="#" class="user-menu-secondary">Выйти</a>
 			</li>
 			<li class="user-menu-compare"><a href="#">Сравнить</a></li>
 			<li class="user-menu-cart"><a href="#">Корзина</a></li>
@@ -42,7 +47,7 @@
 
 	</header>
 
-	<main class="container">
+	<main class="inner-page container">
 		<h1>Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li><a href="index.html">Главная</a></li>
@@ -51,7 +56,7 @@
 		</ul>
 
 		<section class="catalog-filter">
-			<h2>Фильтр:</h2>
+			<h3>Фильтр:</h3>
 			<form id="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset form="catalog-filter-form">
 					<legend>Стоимость</legend>
@@ -67,17 +72,63 @@
 
 				<fieldset form="catalog-filter-form">
 					<legend>Цвет</legend>
-					<label><input type="checkbox" name="color-black" value="black" checked>Черный</label>
-					<label><input type="checkbox" name="color-white" value="white">Белый</label>
-					<label><input type="checkbox" name="color-blue" value="blue" checked>Синий</label>
-					<label><input type="checkbox" name="color-red" value="red" checked>Красный</label>
-					<label><input type="checkbox" name="color-pink" value="pink">Розовый</label>
+					<ul>
+						<li>
+							<label class="filter-checkbox">
+								<input type="checkbox" name="color-black" value="black" checked class="visually-hidden">
+								<span class="checkbox-indicator"></span>
+								Черный
+							</label>
+						</li>
+						<li>
+							<label class="filter-checkbox">
+								<input type="checkbox" name="color-white" value="white" class="visually-hidden">
+								<span class="checkbox-indicator"></span>
+								Белый
+							</label>
+						</li>
+						<li>
+							<label class="filter-checkbox">
+								<input type="checkbox" name="color-blue" value="blue" checked class="visually-hidden">
+								<span class="checkbox-indicator"></span>
+								Синий
+							</label>
+						</li>
+						<li>
+							<label class="filter-checkbox">
+								<input type="checkbox" name="color-red" value="red" checked class="visually-hidden">
+								<span class="checkbox-indicator"></span>
+								Красный
+							</label>
+						</li>
+						<li>
+							<label class="filter-checkbox">
+								<input type="checkbox" name="color-pink" value="pink" class="visually-hidden">
+								<span class="checkbox-indicator"></span>
+								Розовый
+							</label>
+						</li>
+					</ul>
 				</fieldset>
 
 				<fieldset form="catalog-filter-form">
 					<legend>Bluetooth</legend>
-					<label><input type="radio" name="bluetooth" value="Yes" checked>Есть</label>
-					<label><input type="radio" name="bluetooth" value="No">Нет</label>
+						<ul>
+							<li>
+								<label class="filter-radio">
+									<input type="radio" name="bluetooth" value="Yes" checked class="visually-hidden">
+									<span class="radio-indicator"></span>
+									Есть
+								</label>
+							</li>
+							<li>
+								<label class="filter-radio">
+									<input type="radio" name="bluetooth" value="No" class="visually-hidden">
+									<span class="radio-indicator"></span>
+									Нет
+								</label>
+							</li>
+						</ul>
 				</fieldset>
 				<button type="button" class="button">Показать</button>
 			</form>
@@ -110,7 +161,7 @@
 					</p>
 
 					<div class="item-popup">
-					<a href="#" class="addtocart">В корзину</a>
+					<a href="#" class="button addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
 					</div>
 
@@ -125,7 +176,7 @@
 					</p>
 
 					<div class="item-popup">
-					<a href="#" class="addtocart">В корзину</a>
+					<a href="#" class="button addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
 					</div>
 
@@ -140,12 +191,12 @@
 					</p>
 
 					<div class="item-popup">
-					<a href="#" class="addtocart">В корзину</a>
+					<a href="#" class="button addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
 					</div>
 
 				</li>
-				<li class="catalog-list-item">
+				<li class="catalog-list-item new">
 					<a href="#" class="catalog-list-item-image">
 						<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 					</a>
@@ -155,7 +206,7 @@
 					</p>
 
 					<div class="item-popup">
-					<a href="#" class="addtocart">В корзину</a>
+					<a href="#" class="button addtocart">В корзину</a>
 					<a href="#" class="addtocompare">Добавить к сравнению</a>
 					</div>
 
@@ -186,9 +237,7 @@
 	</main>
 	
 	<footer class="main-footer">
-		<a class="main-logo">
-			<img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-		</a>
+		<a class="main-logo" href="#" aria-label="Логотип магазина Девайс"></a>
 
 		<p class="footer-address">г. Москва, ул. Строителей, 15</p>
 		<p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
@@ -196,7 +245,7 @@
 		<ul class="user-menu">
 			<li class="user-menu-logout">
 				<a href="#" class="user-menu-profile">Валентин Петухов</a>
-				<a href="#">Выйти</a>
+				<a href="#" class="user-menu-secondary">Выйти</a>
 			</li>
 			<li class="user-menu-compare"><a href="#">Сравнить</a></li>
 			<li class="user-menu-cart"><a href="#">Корзина</a></li>
@@ -209,9 +258,9 @@
 		</ul>
 
 		<ul class="social-links">
-			<li class="facebook"><a href="http://facebook.com" aria-label="Магазин Девайс на Facebook">Facebook</a></li>
-			<li class="instagram"><a href="http://instagram.com" aria-label="Магазин Девайс в Instagram">Instagram</a></li>
-			<li class="twitter"><a href="http://twitter.com" aria-label="Магазин Девайс в Twitter">Twitter</a></li>
+			<li class="social-links-facebook"><a href="http://facebook.com" aria-label="Магазин Девайс на Facebook">Facebook</a></li>
+			<li class="social-links-instagram"><a href="http://instagram.com" aria-label="Магазин Девайс в Instagram">Instagram</a></li>
+			<li class="social-links-twitter"><a href="http://twitter.com" aria-label="Магазин Девайс в Twitter">Twitter</a></li>
 		</ul>
 
 		<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo">
