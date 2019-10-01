@@ -5,7 +5,7 @@
 @font-face {
 	font-family: "Gilroy Extrabold";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-		 url("../fonts/gilroyextrabold.woff") format("woff"),
+		 url("../fonts/gilroyextrabold.woff") format("woff");
 		
 		 font-weight: 700;
 		 font-style: normal;
@@ -14,7 +14,7 @@
 @font-face {
 	font-family: "Gilroy Light";
 	src: url("../fonts/gilroylight.woff2") format("woff2"),
-		 url("../fonts/gilroylight.woff") format("woff"),
+		 url("../fonts/gilroylight.woff") format("woff");
 			
 		 font-weight: 400;
 		 font-style: normal;
@@ -29,8 +29,8 @@ body {
 	background-color: #ffffff;
 }
 
-.img {
-	width: 100%;
+img {
+	max-width: 100%;
 	height: auto;
 }
 
@@ -52,25 +52,16 @@ body {
 	left: -9000px;
 }
 
-.user-menu a,
-.search-input,
-.search-button,
-.catalog-list a,
-.info-block p {
+.font-osl,
+.font-osl a {
 	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 300;
 }
 
-.site-navigation>li>a,
-.info-block h2,
-.delivery li,
-.button,
-.write-us label,
-.catalog-filter legend,
-.catalog-list-item-title a,
-.item-popup .addtocart {
+.font-ge,
+.button {
 	font-family: "Gilroy Extrabold", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
@@ -78,16 +69,22 @@ body {
 	color: #000000;
 }
 
-.user-menu, 
-.site-navigation,
-.catalog-list,
-.social-links,
-.breadcrumbs,
-.catalog-filter ul {
+.font-gl {
+	font-family: "Gilroy Light", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.custom-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .button {
+	position: relative;
 	box-sizing: border-box;
 	display: block;
 	color: #000000;
@@ -97,19 +94,30 @@ body {
 	letter-spacing: 3px;
 	border: none;
 	background-color: transparent;
-	background-image: url("../img/button-bg.jpg");
-	background-position: left 50%;
-	background-repeat: repeat-x;
+	opacity: 0.99;
+	padding: 0;
+	margin: 0;
+}
+
+.button::before {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	content: "";
+	width: 100%;
+	height: 8px;
+	background-color: #f0c52e;
 }
 
 .button:hover {
 	background-color: #f0c52e;
-	background-image: none;
+	cursor: pointer;
 }
 
 .button:active {
 	color: rgba(0, 0, 0, 0.3);
-	background-image: none;
 }
 
 .main-header {
@@ -131,20 +139,12 @@ body {
 	opacity: 0.3;
 }
 
-.main-logo {
-	display: block;
-	width: 163px;
-	height: 35px;
-	background-color: transparent;
-	background-image: url("../img/logo.svg");	
+.main-logo:hover {
+	opacity: 0.6;
 }
 
-a.main-logo:hover {
-	opacity: 0,6;
-}
-
-a.main-logo:active {
-	opacity: 0,3;
+.main-logo:active {
+	opacity: 0.3;
 }
 
 .user-menu a {
@@ -181,7 +181,7 @@ a.main-logo:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.site-navigation>li>a{
+.site-navigation-item {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
@@ -220,39 +220,27 @@ a.main-logo:active {
 	text-decoration: none;
 }
 
-.main-footer .main-logo {
-	background-image: url("../img/logo-yellow.svg");	
-}
-
-.main-footer .main-logo:hover {
-	opacity: 0.6;
-}
-
-.main-footer .main-logo:active {
-	opacity: 0.3;
-}
-
-.main-footer .user-menu a {
+.main-footer-menu a {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.main-footer .user-menu a:hover {
+.main-footer-menu a:hover {
 	color: rgba(255, 255, 255, 1);
 }
 
-.main-footer .user-menu a:active {
+.main-footer-menu a:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer .site-navigation a {
+.main-footer-navigation a {
 	color: rgba(255, 255, 255, 1);
 }
 
-.main-footer .site-navigation a:hover {
+.main-footer-navigation a:hover {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.main-footer .site-navigation a:active {
+.main-footer-navigation a:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -278,15 +266,11 @@ a.main-logo:active {
 	background-image: url("../img/social-twitter.svg");
 }
 
-.social-links-facebook a:hover,
-.social-links-instagram a:hover,
-.social-links-twitter a:hover {
+.social-links a:hover {
 	opacity: 0.6;
 }
 
-.social-links-facebook a:active,
-.social-links-instagram a:active,
-.social-links-twitter a:active {
+.social-links a:active {
 	opacity: 0.1;
 }
 
@@ -351,7 +335,8 @@ a.main-logo:active {
 
 }
 
-.write-us .button {
+.write-us .button,
+.catalog-filter .button {
 	width: 200px;
 }
 
@@ -374,7 +359,7 @@ a.main-logo:active {
 	opacity: 0.3;
 }
 
-main h1 {
+.main-page-title {
 	font-family: "Gilroy Extrabold", sans-serif;
 	font-weight: 700;
 	font-size: 47px;
@@ -408,6 +393,9 @@ main h1 {
 }
 .catalog-filter fieldset {
 	border: none;
+	margin: 0;
+	padding: 0;
+	background: none;
 }
 
 .catalog-filter label {
