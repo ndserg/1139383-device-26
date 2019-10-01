@@ -366,12 +366,13 @@ img {
 	line-height: 48px;
 }
 
-.breadcrumbs li,
-.breadcrumbs a {
-	font-family: "Open Sans", sans-serif;
+.breadcrumbs li {
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 300;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.3);
 }
