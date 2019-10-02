@@ -1,27 +1,23 @@
-/*font-family: "Open Sans", sans-serif;*/
-/*font-family: "Gilroy Extrabold", sans-serif;*/
-/*font-family: "Gilroy Light", sans-serif;*/
-
 @font-face {
-	font-family: "Gilroy Extrabold";
+	font-family: "Gilroy";
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
 		 url("../fonts/gilroyextrabold.woff") format("woff");
 		
-		 font-weight: 700;
-		 font-style: normal;
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "Gilroy Light";
+	font-family: "Gilroy";
 	src: url("../fonts/gilroylight.woff2") format("woff2"),
 		 url("../fonts/gilroylight.woff") format("woff");
 			
-		 font-weight: 400;
-		 font-style: normal;
+	font-weight: 400;
+	font-style: normal;
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 300;
@@ -39,7 +35,7 @@ img {
 }
 
 .inner-page h3 {
-	font-family: "Gilroy Extrabold", sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
@@ -52,9 +48,8 @@ img {
 	left: -9000px;
 }
 
-.font-osl,
-.font-osl a {
-	font-family: "Open Sans", sans-serif;
+.font-osl {
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 300;
@@ -62,7 +57,7 @@ img {
 
 .font-ge,
 .button {
-	font-family: "Gilroy Extrabold", sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
@@ -70,7 +65,7 @@ img {
 }
 
 .font-gl {
-	font-family: "Gilroy Light", sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
@@ -254,15 +249,15 @@ img {
 	background-repeat: no-repeat;
 }
 
-.social-links-facebook a{
+.social-links-facebook a {
 	background-image: url("../img/social-fb.svg");
 }
 
-.social-links-instagram a{
+.social-links-instagram a {
 	background-image: url("../img/social-inst.svg");
 }
 
-.social-links-twitter a{
+.social-links-twitter a {
 	background-image: url("../img/social-twitter.svg");
 }
 
@@ -328,7 +323,7 @@ img {
 .write-us textarea:-ms-input-placeholder,  /* Internet Explorer 10-11 */
 .write-us textarea::placeholder {
 	color: #464646;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
@@ -360,7 +355,7 @@ img {
 }
 
 .main-page-title {
-	font-family: "Gilroy Extrabold", sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 47px;
 	line-height: 48px;
@@ -400,7 +395,7 @@ img {
 }
 
 .catalog-filter label {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 40px;
 	font-weight: 300;
@@ -447,7 +442,7 @@ img {
 }
 
 .catalog-list-item-title .price {
-	font-family: "Gilroy Light", sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
@@ -458,7 +453,7 @@ img {
 }
 
 .addtocompare {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 36px;
 	font-weight: 300;
@@ -480,7 +475,7 @@ img {
 }
 
 .catalog-list-item.new::before {
-	font-family: "Gilroy Extrabold", sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 58px;
