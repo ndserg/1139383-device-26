@@ -63,10 +63,10 @@
 				<fieldset form="catalog-filter-form">
 					<legend class="font-ge">Стоимость</legend>
 					<div class="catalog-filter-price-range">
-						<p class="price-range-min font-gl">
+						<p class="price-range price-range-left price-min font-gl">
 							<span>от 0</span>
 						</p>
-						<p class="price-range-max font-gl">
+						<p class="price-range price-range-right price-max font-gl">
 							<span>до 5000</span>
 						</p>
 					</div>
@@ -143,21 +143,21 @@
 
 			<div class="catalog-sorting">
 				<h3>Сортировка:</h3>
-				<ul class="catalog-sorting-types custom-list">
+				<ul class="catalog-sorting-types custom-list font-osl">
 					<li id="catalog-sorting-types-price">По цене</li>
-					<li id="catalog-sorting-types-type">По цене</li>
+					<li id="catalog-sorting-types-type">По типу</li>
 					<li id="catalog-sorting-types-popular">По популярности</li>
 				</ul>
-				<button type="button" class="catalog-sorting-up">Сортировка по возрастанию</button>
-				<button type="button" class="catalog-sorting-down">Сортировка по убыванию</button>
+				<button type="button" class="catalog-sorting-button button-up">Сортировка по возрастанию</button>
+				<button type="button" class="catalog-sorting-button button-down active">Сортировка по убыванию</button>
 			</div>
 
-			<ul class="catalog-list custom-list">
-				<li class="catalog-list-item">
-					<a href="#" class="catalog-list-item-image">
+			<ul class="products-list custom-list">
+				<li class="shop-list-item">
+					<a href="#" class="shop-list-item-image">
 						<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
 					</a>
-					<p class="catalog-list-item-title">
+					<p class="shop-list-item-title">
 						<a href="#" class="font-ge">Любительская селфи палка</a>
 						<span class="price">500 руб.</span>
 					</p>
@@ -168,11 +168,11 @@
 					</div>
 
 				</li>
-				<li class="catalog-list-item">
-					<a href="#" class="catalog-list-item-image">
+				<li class="shop-list-item">
+					<a href="#" class="shop-list-item-image">
 						<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 					</a>
-					<p class="catalog-list-item-title">
+					<p class="shop-list-item-title">
 						<a href="#" class="font-ge">Профессиональная селфи-палка</a>
 						<span>1 500 руб.</span>
 					</p>
@@ -183,11 +183,11 @@
 					</div>
 
 				</li>
-				<li class="catalog-list-item">
-					<a href="#" class="catalog-list-item-image">
+				<li class="shop-list-item">
+					<a href="#" class="shop-list-item-image">
 						<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 					</a>
-					<p class="catalog-list-item-title">
+					<p class="shop-list-item-title">
 						<a href="#" class="font-ge">Непотопляемая селфи-палка</a>
 						<span>2 500 руб.</span>
 					</p>
@@ -198,11 +198,11 @@
 					</div>
 
 				</li>
-				<li class="catalog-list-item new">
-					<a href="#" class="catalog-list-item-image">
+				<li class="shop-list-item new">
+					<a href="#" class="shop-list-item-image">
 						<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 					</a>
-					<p class="catalog-list-item-title">
+					<p class="shop-list-item-title">
 						<a href="#" class="font-ge"><span>Селфи-палка «Следуй за мной»</span></a>
 						<span>4 900 руб.</span>
 					</p>
@@ -215,8 +215,8 @@
 				</li>
 			</ul>
 			
-			<nav class="pagination">
-				<ul class="pagination-list cusrom-list">
+			<nav class="pagination font-ge">
+				<ul class="pagination-list custom-list">
 					<li class="pagination-list-item-current">
 						<a href="#">1</a>
 					</li>
