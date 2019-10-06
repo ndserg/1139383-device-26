@@ -16,7 +16,7 @@
 		</a>
 		<form action="https://echo.htmlacademy.ru" method="post" class="search-form">
 			<input type="text" name="search" class="search-input font-osl" placeholder="Поиск по сайту">
-			<button type="button" class="search-button font-osl">Найти</button>
+			<button type="button" class="search-button font-osl visually-hidden">Найти</button>
 		</form>
 		
 		<ul class="user-menu custom-list font-osl">
@@ -29,14 +29,20 @@
 			<ul class="site-navigation custom-list">
 				<li class="site-navigation-catalog">
 					<a href="catalog.html" class="site-navigation-item font-ge">Каталог товаров</a>
-					<ul class="catalog-list custom-list font-osl">
-						<li><a href="#">Виртуальная реальность</a></li>
-						<li><a href="#">Фитнес-браслеты</a></li>
-						<li><a href="#">Квадрокоптеры</a></li>
-						<li><a href="#">Моноподы для селфи</a></li>
-						<li><a href="#">Умные часы</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-					</ul>
+					<div class="catalog-sub-menu visually-hidden">
+						<ul class="catalog-list catalog-category-1 custom-list font-osl">
+							<li class="catalog-category-1"><a href="#">Виртуальная реальность</a></li>
+							<li class="catalog-category-1"><a href="#">Моноподы для селфи</a></li>
+							<li class="catalog-category-1"><a href="#">Экшн-камеры</a></li>
+						</ul>
+						<ul class="catalog-list catalog-category-2 custom-list font-osl">
+							<li class="catalog-category-2"><a href="#">Фитнес-браслеты</a></li>
+							<li class="catalog-category-2"><a href="#">Умные часы</a></li>
+						</ul>
+						<ul class="catalog-list catalog-category-3 custom-list font-osl">
+							<li class="catalog-category-3"><a href="#">Квадрокоптеры</a></li>
+						</ul>
+					</div>
 				</li>
 				<li><a href="#" class="site-navigation-item font-ge">Доставка</a></li>
 				<li><a href="#" class="site-navigation-item font-ge">Гарантия</a></li>
@@ -216,74 +222,77 @@
 				</li>
 			</ul>
 		</section>
+		
+		<div class="info-block-container">
+			<section class="info-block">
+				<h2 class="font-ge">О нас</h2>
+				<p class="font-osl">Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
+				<p class="font-osl">Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
+				<ul class="delivery custom-list">
+					<li class="font-ge">Деловые Линии</li>
+					<li class="font-ge">Автотрейдинг</li>
+					<li class="font-ge">ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="button">Подробнее о нас</a>
+			</section>
 
-		<section class="info-block">
-			<h2 class="font-ge">О нас</h2>
-			<p class="font-osl">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-			<p class="font-osl">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-			<ul class="delivery custom-list">
-				<li class="font-ge">Деловые Линии</li>
-				<li class="font-ge">Автотрейдинг</li>
-				<li class="font-ge">ЖелДорЭкспедиция</li>
-			</ul>
-			<a href="#" class="button">Подробнее о нас</a>
-		</section>
-
-		<section class="info-block">
-			<h2 class="font-ge">Контакты</h2>
-			<p class="font-osl">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-			<a href="#" class="map">
-				<img src="img/map.png" width="560" height="222" alt="Схема проезда">
-			</a>
-			<a href="#" class="button">Напишите нам</a>
-		</section>
+			<section class="info-block">
+				<h2 class="font-ge">Контакты</h2>
+				<p class="font-osl">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+				<a href="#" class="map">
+					<img src="img/map.png" width="560" height="222" alt="Схема проезда">
+				</a>
+				<a href="#" class="button">Напишите нам</a>
+			</section>
+		</div>
 
 	</main>
 	
 	<footer class="main-footer">
-		<a class="main-logo">
-			<img src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
-		</a>
+		<div class="container">
+			<a class="main-logo">
+				<img src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
+			</a>
 
-		<p class="footer-address">г. Москва, ул. Строителей, 15</p>
-		<p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
+			<p class="footer-address">г. Москва, ул. Строителей, 15</p>
+			<p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
 
-		<ul class="user-menu main-footer-menu custom-list font-osl">
-			<li class="user-menu-login"><a href="#">Войти</a></li>
-			<li class="user-menu-compare"><a href="#">Сравнить</a></li>
-			<li class="user-menu-cart"><a href="#">Корзина</a></li>
-		</ul>
+			<ul class="user-menu main-footer-menu custom-list font-osl">
+				<li class="user-menu-login"><a href="#">Войти</a></li>
+				<li class="user-menu-compare"><a href="#">Сравнить</a></li>
+				<li class="user-menu-cart"><a href="#">Корзина</a></li>
+			</ul>
 
-		<ul class="site-navigation main-footer-navigation custom-list">
-			<li><a href="#" class="site-navigation-item font-ge">Доставка</a></li>
-			<li><a href="#" class="site-navigation-item font-ge">Гарантия</a></li>
-			<li><a href="#" class="site-navigation-item font-ge">Контакты</a></li>
-		</ul>
+			<ul class="site-navigation main-footer-navigation custom-list">
+				<li><a href="#" class="site-navigation-item font-ge">Доставка</a></li>
+				<li><a href="#" class="site-navigation-item font-ge">Гарантия</a></li>
+				<li><a href="#" class="site-navigation-item font-ge">Контакты</a></li>
+			</ul>
 
-		<ul class="social-links custom-list">
-			<li class="social-links-facebook"><a href="http://facebook.com" aria-label="Магазин Девайс на Facebook">Facebook</a></li>
-			<li class="social-links-instagram"><a href="http://instagram.com" aria-label="Магазин Девайс в Instagram">Instagram</a></li>
-			<li class="social-links-twitter"><a href="http://twitter.com" aria-label="Магазин Девайс в Twitter">Twitter</a></li>
-		</ul>
+			<ul class="social-links custom-list">
+				<li class="social-links-facebook"><a href="http://facebook.com" aria-label="Магазин Девайс на Facebook">Facebook</a></li>
+				<li class="social-links-instagram"><a href="http://instagram.com" aria-label="Магазин Девайс в Instagram">Instagram</a></li>
+				<li class="social-links-twitter"><a href="http://twitter.com" aria-label="Магазин Девайс в Twitter">Twitter</a></li>
+			</ul>
 
-		<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo" aria-label="Ссылка на Интенсив Htmlacademy"></a>
-		
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo" aria-label="Ссылка на Интенсив Htmlacademy"></a>
+		</div>
 	</footer>
 
 		<section class="popup write-us">
-		<h2 class="visually-hidden">Напишите нам</h2>
+			<h2 class="visually-hidden">Напишите нам</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
-				<p>
+				<p class="personal-info">
 					<label for="user-name" class="font-ge">Ваше имя:</label>
-					<input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+					<input type="text" name="user-name" id="user-name" class="font-osl" placeholder="Имя Фамилия">
 				</p>
-				<p>
+				<p class="personal-info">
 					<label for="user-email" class="font-ge">Ваш e-mail:</label>
-					<input type="email" name="user-email" id="user-email" placeholder="email@example.com">
+					<input type="email" name="user-email" id="user-email" class="font-osl" placeholder="email@example.com">
 				</p>
-				<p>
-					<label for="user-comment" class="font-ge">Ваш e-mail:</label>
-					<textarea name="user-comment" id="user-comment" cols="50" rows="10" placeholder="В свободной форме"></textarea>
+				<p class="user-message">
+					<label for="user-comment" class="font-ge">Текст письма:</label>
+					<textarea name="user-comment" id="user-comment" class="font-osl" cols="50" rows="6" placeholder="В свободной форме"></textarea>
 				</p>
 				<button type="submit" class="button">Отправить</button>
 			</form>
@@ -292,7 +301,7 @@
 
 		<section class="popup map">
 			<h2 class="visually-hidden">Схема проезда</h2>
-			<img src="img/map-big.png" width="994" height="593" alt="Адрес компании: г. Москва, ул. Строителей, 15">
+			<img src="img/map-big.png" width="960" height="559" alt="Адрес компании: г. Москва, ул. Строителей, 15">
 			<button type="button" class="popup-close">Закрыть</button>
 		</section>
 
