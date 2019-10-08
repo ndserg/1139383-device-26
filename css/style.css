@@ -25,6 +25,24 @@ body {
 	background-color: #ffffff;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .inner-page {
 	color: #000000;
 }
@@ -36,11 +54,6 @@ body {
 	line-height: 24px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-}
-
-.visually-hidden {
-	position: absolute;
-	left: -9000px;
 }
 
 .font-osl {
@@ -143,12 +156,6 @@ body {
 	text-decoration: none;	
 }
 
-.main-header a:hover,
-.main-header a:focus {
-	opacity: 0.6;
-}
-
-.main-header a:active,
 .user-menu-secondary {
 	opacity: 0.3;
 }
@@ -157,6 +164,7 @@ body {
 	position: absolute;
 	top: 22px;
 }
+
 .main-logo:hover {
 	opacity: 0.6;
 }
@@ -175,6 +183,15 @@ body {
 	width: 500px;
 }
 
+.user-menu a:hover,
+.user-menu a:focus {
+	opacity: 0.6;
+}
+
+.user-menu a:active {
+	opacity: 0.3;
+}
+
 .user-menu-logout a {
 	margin-right: 20px;
 }
@@ -182,18 +199,64 @@ body {
 .user-menu li{
 	margin-left: 35px;
 }
+
 .user-menu li:first-child {
 	margin: 0;
 	flex-grow: 1;
 }
 
 .user-menu a {
+	position: relative;
 	text-decoration: none;
+}
+
+.user-menu a::before {
+	position: absolute;
+	bottom : 3px;
+	left: 0;
+	display: block;
+	content: "";
+}
+
+.user-menu-login a,
+.user-menu-logout .user-menu-profile {
+	padding-left: 27px;
+}
+
+.user-menu-login a::before,
+.user-menu-logout .user-menu-profile::before {
+	background-image: url("../img/user.svg");
+	background-repeat: no-repeat;
+	width: 13px;
+	height: 12px;
+}
+
+.user-menu-compare a {
+	padding-left: 23px;
+}
+
+.user-menu-compare a::before {
+	background-image: url("../img/compare.svg");
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 10px;
+}
+
+.user-menu-cart a {
+	padding-left: 25px;
+}
+
+.user-menu-cart a::before {
+	background-image: url("../img/cart.svg");
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 12px;
 }
 
 .search-form {
 	width: 440px;
 }
+
 .search-input {
 	color: #000000;
 	background-color: transparent;
@@ -234,6 +297,32 @@ body {
 	letter-spacing: 3px;
 }
 
+.site-navigation-item:hover,
+.site-navigation-item:focus {
+	opacity: 0.6;
+}
+
+.site-navigation-item:active {
+	opacity: 0.3;
+}
+
+.item-conteiner {
+	position: relative;
+	padding-right: 33px;
+}
+
+.item-conteiner::after {
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+	display: block;
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/plus.png");
+	background-repeat: no-repeat;
+}
+
 .site-navigation-catalog {
 	width: 500px;
 }
@@ -248,15 +337,28 @@ body {
 }
 
 .catalog-sub-menu {
+	display: none;
 	margin-top: 13px;
-	display: flex;
 	width: 1040px;
+}
+
+.site-navigation-catalog:hover .catalog-sub-menu {
+	display: flex;
 }
 
 .catalog-list {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+}
+
+.catalog-list a:hover,
+.catalog-list a:focus {
+	opacity: 0.6;
+}
+
+.catalog-list a:active {
+	opacity: 0.3;
 }
 
 .catalog-list li {
@@ -272,15 +374,24 @@ body {
 .info-block-container {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 120px;
+	margin-top: 80px;
 }
 
 .info-block {
 	width: 560px;
 }
 
+.info-block::before {
+	display: block;
+	content: "";
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
+}
+
 .info-block h2 {
 	margin: 0;
+	margin-top: 45px;
 	padding: 0;
 	margin-bottom: 54px;
 	font-size: 47px;
@@ -365,6 +476,19 @@ body {
 
 .main-footer-menu li {
 	margin-left: 40px;
+}
+
+.footer-login a::before,
+.footer-login .user-menu-profile::before {
+	background-image: url("../img/user-footer.svg");
+}
+
+.footer-compare a::before {
+	background-image: url("../img/compare-footer.svg");
+}
+
+.footer-cart a::before {
+	background-image: url("../img/cart-footer.svg");
 }
 
 .main-footer-navigation {
@@ -468,6 +592,21 @@ body {
 
 .htmlacademy-logo:active {
 	opacity: 0.3;
+}
+
+.main-footer .container {
+	position: relative;
+}
+
+.main-footer .container::before {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 13px;
+	width: 80px;
+	height: 7px;
+	background-color: #ffc600;
 }
 
 .popup {
