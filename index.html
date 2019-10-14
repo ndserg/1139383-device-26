@@ -26,9 +26,9 @@
 		</ul>
 
 		<nav class="main-navigation">
-			<ul class="site-navigation custom-list">
+			<ul class="catalog-menu custom-list">
 				<li class="site-navigation-catalog">
-					<a href="catalog.html" class="site-navigation-item item-conteiner font-ge">Каталог товаров</a>
+					<a href="catalog.html" class="site-navigation-item item-container font-ge">Каталог товаров</a>
 					<div class="catalog-sub-menu">
 						<ul class="catalog-list catalog-category-1 custom-list font-osl">
 							<li class="catalog-category-1"><a href="#">Виртуальная реальность</a></li>
@@ -44,6 +44,8 @@
 						</ul>
 					</div>
 				</li>
+			</ul>
+			<ul class="site-navigation custom-list">
 				<li><a href="#" class="site-navigation-item font-ge">Доставка</a></li>
 				<li><a href="#" class="site-navigation-item font-ge">Гарантия</a></li>
 				<li><a href="#" class="site-navigation-item font-ge">Контакты</a></li>
@@ -52,9 +54,9 @@
 
 	</header>
 
-	<main class="container">
+	<main>
 		
-		<section class="promo-slider">
+		<section class="promo-sliders container">
 			<h2 class="visually-hidden">Рекламные слайды</h2>
 			<ul class="promo-slider-list custom-list">
 				<li class="promo-slider-list-item promo-slider-list-current">Cлайд 1</li>
@@ -62,107 +64,129 @@
 				<li class="promo-slider-list-item">Cлайд 3</li>
 			</ul>
 
-			<div class="promo-slider" id="slide-01">
-				<h3 class="visually-hidden">Первый слайд</h3>
-				<span class="promo-slider-number font-ge">01</span>
-				<img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка" class="promo-slider-image">
-				<p class="promo-slider-slogan font-ge">Делай селфи, как Бен Стиллер!</p>
-				<p class="promo-slider-description font-osl">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-				<table class="promo-slider-features">
-					<tr class="item-characteristic-value font-gl">
-						<td>8,5 м</td>
-						<td>5 кг</td>
-						<td>Карбон</td>
-					</tr>
-					<tr class="item-characteristic-name font-osl">
-						<td>Длина палки</td>
-						<td>Вес палки</td>
-						<td>Материал</td>
-					</tr>
-				</table>
-				<a href="#" class="button">Подробнее</a>
+			<div class="promo-slider-item" id="slide-01">
+				<div class="slider-column-left">
+					<h3 class="visually-hidden">Первый слайд</h3>
+					<img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка" class="promo-slider-image">
+				</div>
+				<div class="slider-column-right">
+					<p class="promo-slider-slogan font-ge">Делай селфи,<br> как Бен Стиллер!</p>
+					<p class="promo-slider-description font-osl">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<table class="promo-slider-features">
+						<tr class="item-characteristic-value font-gl">
+							<td>8,5 м</td>
+							<td>5 кг</td>
+							<td>Карбон</td>
+						</tr>
+						<tr class="item-characteristic-name font-osl">
+							<td>Длина палки</td>
+							<td>Вес палки</td>
+							<td>Материал</td>
+						</tr>
+					</table>
+					<a href="#" class="button">Подробнее</a>
+				</div>
 			</div>
 
-			<div class="promo-slider visually-hidden" id="slide-02">
-				<h3 class="visually-hidden">Второй слайд</h3>
-				<span class="promo-slider-number font-ge">02</span>
-				<img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты" class="promo-slider-image">
-				<p class="promo-slider-slogan font-ge">Худеем правильно!</p>
-				<p class="promo-slider-description font-osl">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-				<table class="promo-slider-features">
-					<tr class="item-characteristic-value font-gl">
-						<td>48 часов</td>
-					</tr>
-					<tr class="item-characteristic-name font-osl">
-						<td>Без подзарядки</td>
-					</tr>
-				</table>
-				<a href="#" class="button">Подробнее</a>
+			<div class="promo-slider-item visually-hidden" id="slide-02">
+				<div class="slider-column-left">
+					<h3 class="visually-hidden">Второй слайд</h3>
+					<img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты" class="promo-slider-image">
+				</div>
+				<div class="slider-column-right">
+					<p class="promo-slider-slogan font-ge">Худеем<br> правильно!</p>
+					<p class="promo-slider-description font-osl">Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+					<table class="promo-slider-features">
+						<tr class="item-characteristic-value font-gl">
+							<td>48 часов</td>
+						</tr>
+						<tr class="item-characteristic-name font-osl">
+							<td>Без подзарядки</td>
+						</tr>
+					</table>
+					<a href="#" class="button">Подробнее</a>
+				</div>
 			</div>
 
-			<div class="promo-slider visually-hidden" id="slide-03">
-				<h3 class="visually-hidden">Третий слайд</h3>
-				<span class="promo-slider-number font-ge">03</span>
-				<img src="img/slider-3.png" width="526" height="334" alt="Порхает как бабочка, жалит как пчела!" class="promo-slider-image">
-				<p class="promo-slider-slogan font-ge">Порхает как бабочка, жалит как пчела!</p>
-				<p class="promo-slider-description font-osl">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-				<table class="promo-slider-features">
-					<tr class="item-characteristic-value font-gl">
-						<td>800 м</td>
-						<td>50 м</td>
-					</tr>
-					<tr class="item-characteristic-name font-osl">
-						<td>Дальность полета</td>
-						<td>Радиус поражения</td>
-					</tr>
-				</table>
-				<a href="#" class="button">Подробнее</a>
+			<div class="promo-slider-item visually-hidden" id="slide-03">
+				<div class="slider-column-left">
+					<h3 class="visually-hidden">Третий слайд</h3>
+					<img src="img/slider-3.png" width="526" height="334" alt="Порхает как бабочка, жалит как пчела!" class="promo-slider-image">
+				</div>
+				<div class="slider-column-right">
+					<p class="promo-slider-slogan font-ge">Порхает как бабочка,<br> жалит как пчела!</p>
+					<p class="promo-slider-description font-osl">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
+					<table class="promo-slider-features">
+						<tr class="item-characteristic-value font-gl">
+							<td>800 м</td>
+							<td>50 м</td>
+						</tr>
+						<tr class="item-characteristic-name font-osl">
+							<td>Дальность полета</td>
+							<td>Радиус поражения</td>
+						</tr>
+					</table>
+					<a href="#" class="button">Подробнее</a>
+				</div>
 			</div>
 		</section>
 
-		<nav class="catalog-navigation">
+		<nav class="catalog-navigation container">
 			<h2 class="visually-hidden">Каталог товаров</h2>
 			<ul class="catalog-navigation-list custom-list">
 				<li>
 					<a href="#" class="catalog-list-item">
 						<h3 class="font-ge">Виртуальная реальность</h3>
-						<img src="img/popular-1.svg" width="97" height="55" alt="Раздел Виртуальная реальность">
+						<p class="catalog-list-image">
+							<img src="img/popular-1.svg" width="97" height="55" alt="Раздел Виртуальная реальность">
+						</p>
 					</a>
 				</li>
 				<li>
 					<a href="#" class="catalog-list-item">
-						<h3 class="font-ge">Моноподы для селфи</h3>
-						<img src="img/popular-2.svg" width="86" height="117" alt="Раздел Моноподы для селфи">
+						<h3 class="font-ge">Моноподы<br> для селфи</h3>
+						<p class="catalog-list-image high-image">
+						  <img src="img/popular-2.svg" width="86" height="117" alt="Раздел Моноподы для селфи">
+						</p>
 					</a>
 				</li>
 				<li>
 					<a href="#" class="catalog-list-item">
 						<h3 class="font-ge">Экшн-камеры</h3>
-						<img src="img/popular-3.svg" width="71" height="87" alt="Раздел Экшн-камеры">
+						<p class="catalog-list-image">
+						  <img src="img/popular-3.svg" width="71" height="87" alt="Раздел Экшн-камеры">
+						</p>
 					</a>
 				</li>
 				<li>
 					<a href="#" class="catalog-list-item">
 						<h3 class="font-ge">Фитнес-браслеты</h3>
-						<img src="img/popular-4.svg" width="107" height="65" alt="Раздел Экшн-камеры">
+						<p class="catalog-list-image">
+						  <img src="img/popular-4.svg" width="107" height="65" alt="Раздел Экшн-камеры">
+						</p>
 					</a>
 				</li>
 				<li>
 					<a href="#" class="catalog-list-item">
 						<h3 class="font-ge">Умные часы</h3>
-						<img src="img/popular-5.svg" width="56" height="98" alt="Раздел Умные часы">
+						<p class="catalog-list-image">
+						  <img src="img/popular-5.svg" width="56" height="98" alt="Раздел Умные часы">
+						</p>
 					</a>
 				</li>
 				<li>
-					<a href="#"  class="catalog-list-item">
+					<a href="#" class="catalog-list-item">
 						<h3 class="font-ge">Квадрокоптеры</h3>
-						<img src="img/popular-6.svg" width="132" height="69" alt="Раздел Квадрокоптеры">
+						<p class="catalog-list-image">
+						  <img src="img/popular-6.svg" width="132" height="69" alt="Раздел Квадрокоптеры">
+						</p>
 					</a>
 				</li>
 			</ul>
 		</nav>
 
 		<section class="services">
+			<div class="container">
 				<h2 class="visually-hidden">Раздел Сервисы</h2>
 				<ul class="services-list custom-list font-ge">
 					<li class="button services-list-current">Доставка</li>
@@ -170,60 +194,61 @@
 					<li class="button">Кредит</li>
 				</ul>
 
-				<div class="services-description" id="delivery">
+				<div class="services-description delivery-service" id="delivery">
 					<h3 class="font-ge">Доставка</h3>
-					<p class="font-osl">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					<p class="font-osl">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
 					<img src="img/delivery.svg" width="136" height="164" alt="Раздел Сервисы - Доставка">
 				</div>
 
-				<div class="services-description" id="warranty">
+				<div class="services-description warranty-service visually-hidden" id="warranty">
 					<h3 class="font-ge">Гарантия</h3>
-					<p class="font-osl">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+					<p class="font-osl">Если из-за возгорания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
 					<img src="img/warranty.svg" width="171" height="194" alt="Раздел Сервисы - Гарантия">
 				</div>
 				
-				<div class="services-description" id="credit">
+				<div class="services-description credit-service visually-hidden" id="credit">
 					<h3 class="font-ge">Кредит</h3>
-					<p class="font-osl">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+					<p class="font-osl">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
 					<img src="img/credit.svg" width="156" height="186" alt="Раздел Сервисы - Кредит">
 				</div>
+			</div>
 		</section>
 
-		<section class="companies">
+		<section class="companies container">
 			<h2 class="visually-hidden">Постащики товаров</h2>
 			<ul class="companies-list custom-list">
 				<li>
 					<a href="#" class="companies-list-item">
 						<h3 class="visually-hidden">Компания DJI</h3>
 						<img src="img/dji-logo.jpg" width="260" height="100" alt="Компания DJI" class="companie-image-gray">
-                        <img src="img/dji-logo-color.jpg" width="260" height="100" alt="Компания DJI" class="companie-image-color">
+						<img src="img/dji-logo-color.jpg" width="260" height="100" alt="Компания DJI" class="companie-image-color">
 					</a>
 				</li>
 				<li>
 					<a href="#" class="companies-list-item">
 						<h3 class="visually-hidden">Компания SP Gadgets</h3>
 						<img src="img/spagadgets-logo.jpg" width="260" height="100" alt="Компания SP Gadgets" class="companie-image-gray">
-                        <img src="img/spagadgets-logo-color.jpg" width="260" height="100" alt="Компания SP Gadgets" class="companie-image-color">
+						<img src="img/spagadgets-logo-color.jpg" width="260" height="100" alt="Компания SP Gadgets" class="companie-image-color">
 					</a>
 				</li>
 				<li>
 					<a href="#" class="companies-list-item">
 						<h3 class="visually-hidden">Компания GoPro</h3>
 						<img src="img/gopro-logo.jpg" width="260" height="100" alt="Компания GoPro" class="companie-image-gray">
-                        <img src="img/gopro-logo-color.jpg" width="260" height="100" alt="Компания GoPro" class="companie-image-color">
+						<img src="img/gopro-logo-color.jpg" width="260" height="100" alt="Компания GoPro" class="companie-image-color">
 					</a>
 				</li>
 				<li>
 					<a href="#" class="companies-list-item">
 						<h3 class="visually-hidden">Компания VIVE</h3>
 						<img src="img/vive-logo.jpg" width="260" height="100" alt="Компания VIVE" class="companie-image-gray">
-                        <img src="img/vive-logo-color.jpg" width="260" height="100" alt="Компания VIVE" class="companie-image-color">
+						<img src="img/vive-logo-color.jpg" width="260" height="100" alt="Компания VIVE" class="companie-image-color">
 					</a>
 				</li>
 			</ul>
 		</section>
 		
-		<div class="info-block-container">
+		<div class="info-block-container container">
 			<section class="info-block">
 				<h2 class="font-ge">О нас</h2>
 				<p class="font-osl">Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
@@ -239,7 +264,7 @@
 			<section class="info-block">
 				<h2 class="font-ge">Контакты</h2>
 				<p class="font-osl">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<a href="#" class="map">
+				<a href="#" class="map-link">
 					<img src="img/map.png" width="560" height="222" alt="Схема проезда">
 				</a>
 				<a href="#" class="button">Напишите нам</a>

@@ -29,9 +29,9 @@
 		</ul>
 
 		<nav class="main-navigation">
-			<ul class="site-navigation custom-list">
+			<ul class="catalog-menu custom-list">
 				<li class="site-navigation-catalog">
-					<a href="catalog.html" class="site-navigation-item item-conteiner font-ge">Каталог товаров</a>
+					<a href="catalog.html" class="site-navigation-item item-container font-ge">Каталог товаров</a>
 					<div class="catalog-sub-menu">
 						<ul class="catalog-list catalog-category-1 custom-list font-osl">
 							<li class="catalog-category-1"><a href="#">Виртуальная реальность</a></li>
@@ -47,6 +47,8 @@
 						</ul>
 					</div>
 				</li>
+			</ul>
+			<ul class="site-navigation custom-list">
 				<li><a href="#" class="site-navigation-item font-ge">Доставка</a></li>
 				<li><a href="#" class="site-navigation-item font-ge">Гарантия</a></li>
 				<li><a href="#" class="site-navigation-item font-ge">Контакты</a></li>
@@ -60,19 +62,18 @@
 			<h1 class="main-page-title">Моноподы для селфи</h1>
 			<ul class="breadcrumbs custom-list">
 				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="catalog.html">Каталог товаров</a></li>
 				<li class="breadcrumbs-current">Моноподы для селфи</li>
 			</ul>
 		</div>
 		
 		<div class="inner-content-container">
-			<div class="free-space"></div>
 			<div class="left-column">
 				<section class="catalog-filter font-ge">
 					<h3>Фильтр:</h3>
 					<form id="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
 						<fieldset form="catalog-filter-form">
-							<legend class="font-ge">Стоимость</legend>
+							<legend class="catalog-filter-title font-ge">Стоимость</legend>
 							<div class="catalog-filter-price-range">
 								<p class="price-range price-range-left price-min font-gl">
 									<span>от 0</span>
@@ -84,62 +85,41 @@
 						</fieldset>
 
 						<fieldset form="catalog-filter-form">
-							<legend class="font-ge">Цвет</legend>
+							<legend class="catalog-filter-title filter-color font-ge">Цвет</legend>
 							<ul class="custom-list">
-								<li>
-									<label class="filter-checkbox">
-										<input type="checkbox" name="color-black" value="black" checked class="visually-hidden">
-										<span class="checkbox-indicator"></span>
-										Черный
-									</label>
+								<li class="filter-option">
+									<input type="checkbox" name="color-black" value="black" id="color-black" class="filter-input filter-checkbox visually-hidden" checked>
+									<label for="color-black">Черный</label>
 								</li>
-								<li>
-									<label class="filter-checkbox">
-										<input type="checkbox" name="color-white" value="white" class="visually-hidden">
-										<span class="checkbox-indicator"></span>
-										Белый
-									</label>
+								<li class="filter-option">
+									<input type="checkbox" name="color-white" value="white" id="color-white" class="filter-input filter-checkbox visually-hidden">
+									<label for="color-white">Белый</label>
 								</li>
-								<li>
-									<label class="filter-checkbox">
-										<input type="checkbox" name="color-blue" value="blue" checked class="visually-hidden">
-										<span class="checkbox-indicator"></span>
-										Синий
-									</label>
+								<li class="filter-option">
+									<input type="checkbox" name="color-blue" value="blue" id="color-blue" class="filter-input filter-checkbox visually-hidden" checked>
+									<label for="color-blue">Синий</label>
 								</li>
-								<li>
-									<label class="filter-checkbox">
-										<input type="checkbox" name="color-red" value="red" checked class="visually-hidden">
-										<span class="checkbox-indicator"></span>
-										Красный
-									</label>
+								<li class="filter-option">
+									<input type="checkbox" name="color-red" value="red" id="color-red" class="filter-input filter-checkbox visually-hidden" checked>
+									<label for="color-red">Красный</label>
 								</li>
-								<li>
-									<label class="filter-checkbox">
-										<input type="checkbox" name="color-pink" value="pink" class="visually-hidden">
-										<span class="checkbox-indicator"></span>
-										Розовый
-									</label>
+								<li class="filter-option">
+									<input type="checkbox" name="color-pink" value="pink" id="color-pink" class="filter-input filter-checkbox visually-hidden">
+									<label for="color-pink">Розовый</label>
 								</li>
 							</ul>
 						</fieldset>
 
 						<fieldset form="catalog-filter-form">
-							<legend class="font-ge">Bluetooth</legend>
+							<legend class="catalog-filter-title filter-bluetooth font-ge">Bluetooth</legend>
 								<ul class="custom-list">
-									<li>
-										<label class="filter-radio">
-											<input type="radio" name="bluetooth" value="Yes" checked class="visually-hidden">
-											<span class="radio-indicator"></span>
-											Есть
-										</label>
+									<li class="filter-option">
+										<input type="radio" name="bluetooth" value="Yes" id="bluetooth-yes" class="filter-input filter-radio visually-hidden" checked>
+										<label for="bluetooth-yes">Есть</label>
 									</li>
-									<li>
-										<label class="filter-radio">
-											<input type="radio" name="bluetooth" value="No" class="visually-hidden">
-											<span class="radio-indicator"></span>
-											Нет
-										</label>
+									<li class="filter-option">
+										<input type="radio" name="bluetooth" value="No" id="bluetooth-no" class="filter-input filter-radio visually-hidden">
+										<label for="bluetooth-no">Нет</label>
 									</li>
 								</ul>
 						</fieldset>
@@ -170,14 +150,13 @@
 							</a>
 							<p class="shop-list-item-title">
 								<a href="#" class="font-ge">Любительская селфи палка</a>
-								<span class="price">500 руб.</span>
+								<span class="price font-gl">500 руб.</span>
 							</p>
 
 							<div class="item-popup">
 							<a href="#" class="button addtocart font-ge">В корзину</a>
 							<a href="#" class="addtocompare">Добавить к сравнению</a>
 							</div>
-
 						</li>
 						<li class="shop-list-item">
 							<a href="#" class="shop-list-item-image">
@@ -185,14 +164,13 @@
 							</a>
 							<p class="shop-list-item-title">
 								<a href="#" class="font-ge">Профессиональная селфи&#8209;палка</a>
-								<span>1 500 руб.</span>
+								<span class="price font-gl">1 500 руб.</span>
 							</p>
 
 							<div class="item-popup">
 							<a href="#" class="button addtocart font-ge">В корзину</a>
 							<a href="#" class="addtocompare">Добавить к сравнению</a>
 							</div>
-
 						</li>
 						<li class="shop-list-item">
 							<a href="#" class="shop-list-item-image">
@@ -200,14 +178,13 @@
 							</a>
 							<p class="shop-list-item-title">
 								<a href="#" class="font-ge">Непотопляемая селфи-палка</a>
-								<span>2 500 руб.</span>
+								<span class="price font-gl">2 500 руб.</span>
 							</p>
 
 							<div class="item-popup">
 							<a href="#" class="button addtocart font-ge">В корзину</a>
 							<a href="#" class="addtocompare">Добавить к сравнению</a>
 							</div>
-
 						</li>
 						<li class="shop-list-item new">
 							<a href="#" class="shop-list-item-image">
@@ -215,14 +192,13 @@
 							</a>
 							<p class="shop-list-item-title">
 								<a href="#" class="font-ge"><span>Селфи-палка «Следуй за мной»</span></a>
-								<span>4 900 руб.</span>
+								<span class="price font-gl">4 900 руб.</span>
 							</p>
 
 							<div class="item-popup">
 							<a href="#" class="button addtocart font-ge">В корзину</a>
 							<a href="#" class="addtocompare">Добавить к сравнению</a>
 							</div>
-
 						</li>
 					</ul>
 					
