@@ -23,7 +23,6 @@ body {
 	font-weight: 300;
 	color: #464646;
 	background-color: #ffffff;
-	opacity: 0.5;
 }
 
 .visually-hidden:not(:focus):not(:active),
