@@ -17,6 +17,8 @@
 }
 
 body {
+	min-width: 1160px;
+
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
@@ -179,7 +181,7 @@ input[type="radio"].visually-hidden {
 
 .main-logo {
 	position: absolute;
-	top: 22px;
+	top: 24px;
 }
 
 .main-logo:hover {
@@ -509,6 +511,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 92px;
+	margin-bottom: 82px;
 }
 
 .info-block {
@@ -589,17 +592,12 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
 	min-height: 193px;
-	margin-top: 83px;
-	padding-top: 64px;
+	padding-top: 65px;
 	padding-bottom: 65px;
 
 	color: #ffffff;
 
 	background-color: #464646;
-}
-
-.inner-page .main-footer {
-	margin-top: 76px;
 }
 
 .main-footer .container {
@@ -617,8 +615,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-tel {
-	text-decoration: none;
 	color: #ffffff;
+	text-decoration: none;
 }
 
 .footer-address,
@@ -1162,7 +1160,8 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 18px;
 }
 
-.catalog-filter label {
+
+.catalog-filter-label {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 40px;
@@ -1240,6 +1239,7 @@ input[type="radio"].visually-hidden {
 .right-column {
 	position: relative;
 
+	margin-bottom: 76px;
 	padding-left: 72px;
 }
 
@@ -1977,10 +1977,10 @@ li:last-child .companies-list-item {
 }
 
 .price-max {
-	left: 88px;
+	left: 89px;
 }
 
-.price-range span {
+.price-range label {
 	color: rgba(0, 0, 0, 0.2);
 }
 
