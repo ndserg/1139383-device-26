@@ -18,7 +18,8 @@
 			</a>
 
 			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-				<input class="search-input font-osl" type="text" name="search" placeholder="Поиск по сайту">
+				<input class="search-input font-osl" type="text" name="search" id="search" placeholder="Поиск по сайту">
+				<label class="visually-hidden" for="search">Поиск по сайту</label>
 				<button class="search-button font-osl" type="button">Найти</button>
 			</form>
 
@@ -84,13 +85,13 @@
 								<legend class="catalog-filter-title font-ge">Стоимость</legend>
 
 								<div class="catalog-filter-price-range">
-									<p class="price-range price-range-left price-min font-gl">
-										<input class="price-range-min visually-hidden" type="number" name="price-range-min" id="price-range-min" value="0">
-										<label for="price-range-min">от 0</label>
+									<p>
+										<input class="price-range-value price-range-min visually-hidden" type="number" name="price-range-min" id="price-range-min" value="0">
+										<label class="price-range price-min font-gl" for="price-range-min">от 0</label>
 									</p>
-									<p class="price-range price-range-right price-max font-gl">
-										<input class="price-range-max visually-hidden" type="number" name="price-range-max" id="price-range-max" value="5000">
-										<label class="font-gl" for="price-range-min">до 5000</label>
+									<p>
+										<input class="price-range-value price-range-max visually-hidden" type="number" name="price-range-max" id="price-range-max" value="5000">
+										<label class="price-range price-max font-gl" for="price-range-max">до 5000</label>
 									</p>
 								</div>
 							</fieldset>
@@ -155,13 +156,13 @@
 							<h3>Сортировка:</h3>
 
 							<ul class="catalog-sorting-types custom-list font-osl">
-								<li id="catalog-sorting-types-price">По цене</li>
-								<li id="catalog-sorting-types-type">По типу</li>
-								<li id="catalog-sorting-types-popular">По популярности</li>
+								<li><button class="sorting-types-button sorting-types-button current" type="button">По цене</button></li>
+								<li><button class="sorting-types-button" type="button">По типу</button></li>
+								<li><button class="sorting-types-button" type="button">По популярности</button></li>
 							</ul>
 
 							<button class="catalog-sorting-button button-up" type="button">Сортировка по возрастанию</button>
-							<button class="catalog-sorting-button button-down active" type="button">Сортировка по убыванию</button>
+							<button class="catalog-sorting-button button-down current" type="button">Сортировка по убыванию</button>
 						</div>
 
 						<ul class="products-list custom-list">
@@ -169,7 +170,7 @@
 								<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
 
 								<p class="shop-list-item-title">
-									<a class="font-ge" href="#">Любительская селфи палка</a>
+									<a class="shop-item-1 font-ge" href="#">Любительская селфи-палка</a>
 									<span class="price font-gl">500 руб.</span>
 								</p>
 
@@ -183,7 +184,7 @@
 								<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 
 								<p class="shop-list-item-title">
-									<a class="font-ge" href="#">Профессиональная селфи&#8209;палка</a>
+									<a class="shop-item-2 font-ge" href="#">Профессиональная<br> селфи-палка</a>
 									<span class="price font-gl">1 500 руб.</span>
 								</p>
 
@@ -197,7 +198,7 @@
 								<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 
 								<p class="shop-list-item-title">
-									<a class="font-ge" href="#">Непотопляемая селфи&#8209;палка</a>
+									<a class="shop-item-3 irregular-letter-spacing font-ge" href="#">Непотопляемая селфи-палка</a>
 									<span class="price font-gl">2 500 руб.</span>
 								</p>
 
@@ -211,7 +212,7 @@
 								<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 								
 								<p class="shop-list-item-title">
-									<a class="font-ge" href="#"><span>Селфи&#8209;палка «Следуй за мной»</span></a>
+									<a class="shop-item-4 font-ge" href="#"><span>Селфи-палка «Следуй за мной»</span></a>
 									<span class="price font-gl">4 900 руб.</span>
 								</p>
 

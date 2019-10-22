@@ -24,6 +24,8 @@ close_message.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
 	if (!user_name.value || !email.value || !comment.value) {
 	evt.preventDefault();
+	popup_message.classList.remove("write-us-error");
+	popup_message.offsetWidth = popup_message.offsetWidth;
 	popup_message.classList.add("write-us-error");
 	}
 });

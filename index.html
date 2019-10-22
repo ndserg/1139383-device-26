@@ -17,8 +17,9 @@
 				<img src="img/logo-main.svg" width="163" height="35" alt="Логотип магазина Девайс">
 			</a>
 
-			<form action="https://echo.htmlacademy.ru" method="post" class="search-form">
-				<input class="search-input font-osl" type="text" name="search" placeholder="Поиск по сайту">
+			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+				<input class="search-input font-osl" type="text" name="search" id="search" placeholder="Поиск по сайту">
+				<label class="visually-hidden" for="search">Поиск по сайту</label>
 				<button class="search-button font-osl" type="button">Найти</button>
 			</form>
 			
@@ -61,10 +62,10 @@
 			<section class="promo-sliders container">
 				<h2 class="visually-hidden">Рекламные слайды</h2>
 
-				<ul class="promo-slider-list custom-list">
-					<li class="promo-slider-list-item promo-slider-list-current">Cлайд 1</li>
-					<li class="promo-slider-list-item">Cлайд 2</li>
-					<li class="promo-slider-list-item">Cлайд 3</li>
+				<ul class="promo-slider-controls custom-list">
+					<li><button class="promo-slider-button promo-slider-button-current" type="button">Cлайд 1</button></li>
+					<li><button class="promo-slider-button" type="button">Cлайд 2</button></li>
+					<li><button class="promo-slider-button" type="button">Cлайд 3</button></li>
 				</ul>
 
 				<div class="promo-slider-item" id="slide-01">
@@ -147,7 +148,7 @@
 				<h2 class="visually-hidden">Каталог товаров</h2>
 
 				<ul class="catalog-navigation-list custom-list">
-					<li>
+					<li class="catalog-item-container">
 						<a class="catalog-list-item" href="#">
 							<h3 class="catalog-item-title font-ge">Виртуальная реальность</h3>
 							<p class="catalog-list-image">
@@ -156,7 +157,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li class="catalog-item-container">
 						<a class="catalog-list-item" href="#">
 							<h3 class="catalog-item-title font-ge">Моноподы<br> для селфи</h3>
 							<p class="catalog-list-image high-image">
@@ -165,7 +166,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li class="catalog-item-container">
 						<a class="catalog-list-item" href="#">
 							<h3 class="catalog-item-title font-ge">Экшн-камеры</h3>
 							<p class="catalog-list-image">
@@ -174,7 +175,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li class="catalog-item-container">
 						<a class="catalog-list-item" href="#">
 							<h3 class="catalog-item-title font-ge">Фитнес-браслеты</h3>
 							<p class="catalog-list-image">
@@ -183,7 +184,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li class="catalog-item-container">
 						<a class="catalog-list-item" href="#">
 							<h3 class="catalog-item-title font-ge">Умные часы</h3>
 							<p class="catalog-list-image">
@@ -192,7 +193,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li class="catalog-item-container">
 						<a class="catalog-list-item" href="#">
 							<h3 class="catalog-item-title font-ge">Квадрокоптеры</h3>
 							<p class="catalog-list-image">
@@ -208,24 +209,24 @@
 					<h2 class="visually-hidden">Раздел Сервисы</h2>
 
 					<ul class="services-list custom-list font-ge">
-						<li class="button services-list-current delivery-link">Доставка</li>
-						<li class="button warranty-link">Гарантия</li>
-						<li class="button credit-link">Кредит</li>
+						<li><button class="button services-button services-list-current" type="button">Доставка</button></li>
+						<li><button class="button services-button" type="button">Гарантия</button></li>
+						<li><button class="button services-button" type="button">Кредит</button></li>
 					</ul>
 
-					<div class="services-description delivery-service" id="delivery">
+					<div class="services-description delivery-service">
 						<h3 class="font-ge">Доставка</h3>
 						<p class="font-osl">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
 						<img src="img/delivery.svg" width="136" height="164" alt="Раздел Сервисы - Доставка">
 					</div>
 
-					<div class="services-description warranty-service visually-hidden" id="warranty">
+					<div class="services-description warranty-service visually-hidden">
 						<h3 class="font-ge">Гарантия</h3>
 						<p class="font-osl">Если из-за возгорания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
 						<img src="img/warranty.svg" width="171" height="194" alt="Раздел Сервисы - Гарантия">
 					</div>
 					
-					<div class="services-description credit-service visually-hidden" id="credit">
+					<div class="services-description credit-service visually-hidden">
 						<h3 class="font-ge">Кредит</h3>
 						<p class="font-osl">Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
 						<img src="img/credit.svg" width="156" height="186" alt="Раздел Сервисы - Кредит">
@@ -290,11 +291,11 @@
 					<h2 class="font-ge">Контакты</h2>
 					<p class="font-osl">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					
-					<a class="map-link" href="#">
+					<a class="map-link" href="map.html">
 						<img src="img/map.png" width="560" height="222" alt="Схема проезда">
 					</a>
 
-					<a class="write-us-button button" href="#">Напишите нам</a>
+					<a class="write-us-button button" href="message.html">Напишите нам</a>
 				</section>
 			</div>
 		</main>
