@@ -1,3 +1,4 @@
+'use strict';
 /*popup contact form*/
 var link_message = document.querySelector(".write-us-button");
 

@@ -63,12 +63,12 @@
 				<h2 class="visually-hidden">Рекламные слайды</h2>
 
 				<ul class="promo-slider-controls custom-list">
-					<li><button class="promo-slider-button promo-slider-button-current" type="button">Cлайд 1</button></li>
-					<li><button class="promo-slider-button" type="button">Cлайд 2</button></li>
-					<li><button class="promo-slider-button" type="button">Cлайд 3</button></li>
+					<li><button class="promo-slider-button promo-slider-button-current" type="button" data-slide="1">Cлайд 1</button></li>
+					<li><button class="promo-slider-button" type="button" data-slide="2">Cлайд 2</button></li>
+					<li><button class="promo-slider-button" type="button" data-slide="3">Cлайд 3</button></li>
 				</ul>
 
-				<div class="promo-slider-item" id="slide-01">
+				<div class="promo-slider-item promo-slider-item-current" id="slide-01">
 					<div class="slider-column-left">
 						<h3 class="visually-hidden">Первый слайд</h3>
 						<img class="promo-slider-image-01" src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка">
@@ -209,9 +209,9 @@
 					<h2 class="visually-hidden">Раздел Сервисы</h2>
 
 					<ul class="services-list custom-list font-ge">
-						<li><button class="button services-button services-list-current" type="button">Доставка</button></li>
-						<li><button class="button services-button" type="button">Гарантия</button></li>
-						<li><button class="button services-button" type="button">Кредит</button></li>
+						<li><button class="button services-button services-list-current" type="button" data-service="1">Доставка</button></li>
+						<li><button class="button services-button" type="button" data-service="2">Гарантия</button></li>
+						<li><button class="button services-button" type="button" data-service="3">Кредит</button></li>
 					</ul>
 
 					<div class="services-description delivery-service">
@@ -363,5 +363,7 @@
 		</section>
 	
 	<script src="js/popups-min.js"></script>
+	<script src="js/slider-min.js"></script>
+	<script src="js/services-min.js"></script>
 	</body>
 </html>

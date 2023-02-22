@@ -1462,6 +1462,7 @@ input[type="number"].visually-hidden {
 
 .promo-slider-controls {
 	position: absolute;
+	z-index: 10;
 	right: 82px;
 	bottom: 159px;
 
@@ -1487,6 +1488,7 @@ input[type="number"].visually-hidden {
 	background-image: url("../img/slider-button-empty.svg");
 	background-repeat: no-repeat;
 	border: none;
+	cursor: pointer;
 }
 
 li:first-child .promo-slider-button {
